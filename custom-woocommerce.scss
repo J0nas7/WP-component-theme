@@ -1,0 +1,165 @@
+.woocommerce, .woocommerce-page {
+    .woocommerce-ordering {
+        width: 100%;
+        text-align: center;
+
+        .orderby{
+            text-align: center;
+            border-color: #bbb;
+            padding: 8px;
+            border-radius: 8px;
+            color: black;
+            font-weight: bold;
+            background-color: white;
+        }
+    }
+
+    .woocommerce-Price-amount {
+        font-weight: bold;
+    }
+
+    .product.type-product {
+        input.qty {
+            width: 36px;
+            height: 36px;
+            line-height: 36px;
+            margin: 3px 0;
+        }
+
+        form.cart {
+            .variations {
+                margin-top: 30px;
+                margin-bottom: 10px !important;
+
+                th.label {
+                    text-align: left;
+                }
+                td.value select {
+                    height: 36px;
+                }
+            }
+
+            .button {
+                clear: left;
+                margin-top: 2px;
+            }
+        }
+
+        .product_meta {
+            & > span {
+                display: block;
+                clear: left;
+            }
+        }
+
+        .woocommerce-product-attributes-item__label, 
+        .woocommerce-product-attributes-item__value {
+            width: 100%;
+            display: inline-block;
+        }
+    }
+
+    .category-subcat-products.products {
+        .product.type-product {
+            float: left;
+            width: 46% !important; // 2-row
+            margin: 0 2% !important;
+
+            @media (min-width: 768px) {
+                width: 29.33% !important; // 3-row
+            }
+
+            @media (min-width: 992px) {
+                width: 21% !important; // 4-row
+            }
+
+            .woocommerce-loop-product__title {
+                height: 40px;
+                line-height: 20px;
+                padding: 0;
+                overflow: hidden;
+            }
+        }
+    }
+
+    form.woocommerce-cart-form {
+        border: 1px #a4a4a4 solid;
+        margin-bottom: 20px;
+
+        .woocommerce-cart-form__cart-item.cart_item {
+            border-bottom: 1px #a4a4a4 solid;
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+
+        .button[name=update_cart] {
+            background-color: #8fbc8f;
+            color: white;
+            opacity: 1;
+        }
+        .button[name=apply_coupon] {
+            background-color: #d4d48d;
+            color: black;
+            font-size: .8rem;
+            opacity: 1;
+        }
+    }
+
+    ul.reepay-logos {
+        flex-wrap: unset !important;
+        /*display: block !important;
+        justify-content: normal !important;
+        float: left !important;*/
+
+        li.reepay-logo {
+            float: left !important;
+        }
+    }
+
+    table.shop_table.woocommerce-checkout-review-order-table {
+        position: relative;
+
+        tr.woocommerce-shipping-totals.shipping.ship-row {
+            td {
+                position: relative;
+                padding-bottom: 45px;
+            }
+    
+            input#shipmondo_zipcode_field_0 {
+                width: 50px;
+                text-align: center;
+                height: 30px;
+            }
+
+            /*.selected_shop_context.shipmondo-clearfix.active, 
+            .shipmondo_zipcode_error_text.active {
+                word-break: break-all;
+            }*/
+
+            .shipmondo_dropdown_button, 
+            .shipmondo_service_point_selector_dropdown_container {
+                position: absolute;
+                top: auto;
+                left: 10px;
+
+                &.shipmondo_dropdown_button { bottom: 10px; }
+                &.shipmondo_service_point_selector_dropdown_container { bottom: -10px; }
+
+                #shipmondo_find_shop_btn_0 {
+                    background-color: green;
+                }
+            }
+        
+            ul.shipmondo-shoplist-ul {
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+small.woocommerce-price-suffix {
+    clear: left;
+    display: block;
+    font-size: .6rem;
+    color: black;
+}
